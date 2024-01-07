@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Tasarım Desenleri</title>
+    <link rel="icon" type="image/png" sizes="120x120" href="assets/turkey.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a style="color: white;" class="navbar-brand" href="index.html"><i>Rayiha</i><span
+                    style="color: yellow;">DEV</span></a>
+            <button style="color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="hakkımızda.html">Hakkımızda</a></li>
+                    <!-- <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Örnek</a></li>-->
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('assets/TasarımDesenleri1/tasarımDesenleriarkaplan.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+
+                        <h1 style="color: white;">Tasarım Desenleri(Design Patterns)</h1>
+
+                        <p></p>
+                        <span style="color: #7efff5;" class="meta">
+                            <a target="_blank" style="color: yellow;"
+                                href="https://www.instagram.com/smetsyn/">Rayiha</a>
+                            tarafından 28 Aralık'ta yayınlandı, 2023
+                        </span>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content-->
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <h3 style="color: blue;">Tasarım Deseni(Patern) Nedir? </h3>
+
+                    <p>Patern kavramı; "klişeleşmiş durumlar ya da sorunlar için geliştirilmiş, belirli bir ismi olan ve
+                        dökümante edilmiş, nesne yönelimli standart tasarım çözümleri" biçiminde tanımlanabilir.</p>
+
+                    <p>Paternler kullanılarak, belirli sorunlar herkes tarafından bilinen standart yöntemlerle daha
+                        kolay bir biçimde çözümlenebilmektedir.</p>
+
+                    <p>Böylece tipik bir sorunla karşılaşan bir programcı Amerika'yı yeniden keşfetmek zorunda
+                        kalmayacak, ilgili paterni kullanarak sorunu hızlı bir biçimde çözümleyebilecektir.</p>
+
+                    <p>Patern kavramı aslında günlük hayatta, farkında bile olmadan kullandığımız bir olgudur. Örneğin;
+                    </p>
+
+                    <blockquote class="blockquote">
+                        <ul>
+                            <li>Satrançtaki Rok gibi bazı hamleler veya açılışlar,</li>
+                            <li>Tavlada kapı alan zar kombinasyonları,</li>
+                            <li>Müzikteki akorlar veya makamlar,</li>
+                            <li>Elektronikte sıkça kullanılan bazı tipik devre tasarımları(Multivibratör, Tam Dalga
+                                Doğrultucusu devresi, vb.)</li>
+                        </ul>
+                    </blockquote>
+
+                    <p>NYP'de de zaman içinde böyle tasarım kalıpları geliştirilmiş olup, ihtiyaç duyduğumuz durumlarda
+                        aynı şekilde kullanmaktayız.</p>
+
+                    <p>Varolan bir kod veya küyüphane üzerinde çalışırken, uygulanmış olası bir paterni keşfeden
+                        programcı, orada hangi gerekçeyle ne yapılmak istendiğini hemen anlayabilecektir.</p>
+
+                    <blockquote class="blockquote">
+                        <pre>
+                    DataTable tbl = new DataTable();
+                    //...
+                    DataRow r = tbl.NewRow();
+                    </pre>
+                    </blockquote>
+
+                    <h5 style="color: blue;">Pattern Kümeleri(Cluster)</h5>
+
+                    <p>Patternler yazılım mühendisliğinde çeşitli düzeylerde örneğin hem implementasyon hem de mimari
+                        düzeyde kullanılmaktadır.</p>
+
+                    <p>Tasarım Desenleri <b>implementasyona</b> ilişkin patternler olup, kısaca GoF biçiminde
+                        isimlendirilir.</p>
+
+                    <p>Öte yandan MVC, MVP, Transaction Script, Table Module gibi patternler ise <b>mimari</b>
+                        paternlerdir.</p>
+
+                    <p>Bunların yanı sıra <b>yeniden yapılandırma(refactoring)</b> paternleri diye bilinen üçüncü bir
+                        gruptan daha bahsedilir.</p>
+
+                    <h5 style="color: blue;">İdiom Kavramı</h5>
+
+                    <p>Bir patternin bir programlama dilinde uygulanmasını kolay hale getiren veya söz konusu paterne
+                        doğrudan alternatif olan ve dilin kendisine ilişkin yerleşik özelliklere idiom denir.</p>
+
+                    <img src="assets/TasarımDesenleri1/tasarımdesenleri1.png" alt="tasarımdesenleri1"
+                        style="max-width: 100%; height: auto;">
+                    <p></p>
+
+                    <h5 style="color: blue;">Anti-Patern Kavramı</h5>
+
+                    <p>İlk kez 1995 yılında Andrew Koenig tarafından kullanılan soyut bir kavramdır.</p>
+
+                    <p>Aslında Anti-paternler de birer paterndir.</p>
+                    <p>Yazılımsal bir problemi bilinen ve doğru çözüm olarak kabul edilmiş bir paterni kullanmak yerine
+                        özgün bir yöntemle çözmek demektir.</p>
+                    <p>Ancak bu formal tanımın dışında; pratikte kötü çözüm, kötğ fikir gibi pejoratif algısal bir yönü
+                        de vardır.</p>
+                    <blockquote class="blockquote" style="color:red;">Anti-Patern Örnekleri</blockquote>
+                    <p>Kötü çözümlerin anti pattern'ler adı altında dökümante edilmiş olmasının bir faydası da,
+                        programcıların bu yöntemleri tanıması ve bunlardan uzak durmasını sağlamaktır.</p>
+
+                    <img src="assets/TasarımDesenleri1/tasarımdesenleri2.png" alt="tasarımdesenleri2"
+                        style="max-width: 100%; height: auto;">
+                    <p></p>
+
+                    <h4 style="color: blue;">GOF Sistematiği</h4>
+                    <p></p>
+
+                    <img src="assets/TasarımDesenleri1/tasarımdesenleri3.png" alt="tasarımdesenleri3"
+                        style="max-width: 100%; height: auto;">
+                    <p></p>
+
+                    <blockquote style="color: black;">
+                        <h5 style="color: red;">-Nesne Oluşturulmasına/Yaratılmasına İlişkin (Creational) Paternler</h5>
+                        <p>Bu patternlerin genel ve ortak karakteristiği; çeşitli biçimlerdeki nesne yaratılış
+                            işlemlerini nesneyi kullanacak olan kişiden gizlemeleri ve soyutlamalarıdır.</p>
+                        <p>Bu noktada; "nesne yaratma" ifadesi, İngilizce terminolojideki "create" kelimesinden yola
+                            çıkılarak kullanılmaktadır.</p>
+                        <p>Mevcut nesnelerin birleşiminden oluşan kompozit nesneler için ise "oluşturma" kelimesi
+                            kullanılacaktır.</p>
+                        <h5 style="color: blue;">Sınıf Ve Nesne Kavramları</h5>
+                        <p>Nesne yönelimli programlama(NYP) terminolojisinde sınıf ve nesne kavramları aynı anlama
+                            gelmez.</p>
+                        <p>Nesnelerin birbirinden ayırt edilebilmesini sağlayan üç karakteristikleri vardır:</p>
+                        <ol>
+                            <li>Durum Bilgisi (State)</li>
+                            <li>Davranış (Behaviour)</li>
+                            <li>Kimlik (Identity)</li>
+                        </ol>
+                    </blockquote>
+                    <h4 style="color: blue;">Encapsulation ve Abstraction</h4>
+                    <p></p>
+
+                    <blockquote style="color: black;">
+                        <h5 style="color: red;">Encapsulation</h5>
+                        <p>Bir sınıftan üretilen nesnenin içsel çalısması ile ilgili olan özellik ve işlevleri kendisini
+                            kullanacak kişinin algısından uzaklaştıracak şekilde ayarlanmasına(gizlenmesine,
+                            paketlenmesine kapsüllenmesine) <b>encapsulation</b> denir ve programlama dillerinde erişim
+                            belirteçleri yoluyla uygulanır.</p>
+                        <p>Kullanımından sağlanan getiriler;</p>
+                        <ul>
+                            <li>Nesnenin kullanımı karmaşıklık düzeyinin azalması nedeniyle kolaylaşır.</li>
+                            <li>Kullanıcıya hissettirilmeden değişiklik yapılabilir.</li>
+                            <li>Nesnenin çalışması ile ilgili önemli bilgiler gizlenebilir.</li>
+                        </ul>
+                    </blockquote>
+
+                    <blockquote style="color: black;">
+                        <h5 style="color: red;">Abstraction</h5>
+                        <p>Encapsulation nesnenin kullanım süreciyle ilişkiliyken; abstraction kavramı tasarım süreciyle
+                            ilgilidir.</p>
+                        <ul>
+                            <li>Tasarımın birbirinden soyutlanmış katmanlara ayrılmasıdır. Bir katmanın tasarımında çok
+                                önemli olan bir unsur diğerinde tümüyle ihmal edilebilir.</li>
+                            <li>Bunun yazılımsal karşılığı aynı varlığın farklı modellemelerinin yapılabilmesidir.</li>
+                            <li>Örneğin iş kurallarının yazıldığı bir katman, kullanıcı arayüzüne ilişkin unsurlardan
+                                soyutlanmalıdır. Bu prensibe göre; iş katmanındaki bir sınıfa ait fonksiyonun elde
+                                ettiği verileri ekrana basmak yerine, bu veriyi geri dönüş değeri olarak vermesi ve
+                                ekrana basma görevini sunum katmanına bırakması gerekir.</li>
+                        </ul>
+                    </blockquote>
+
+                    <h4 style="color: blue;">UML(Unified Modelling Language)</h4>
+
+                    <p>Programlama dillerinden bağımsız, formal ve standart bir modellemeyle yazılım geliştirme
+                        metodolojisine duyulan ihtiyaca cevap vermek üzere 1991 yılında James Rumbaugh tarafından
+                        OMT(Object Modelling Technique) isimli metodoloji geliştirildi.</p>
+
+                    <p>Hemen hemen aynı dönemde Grady Booch OOAD(Object Oriented Analysis & Design) ismini verdiği
+                        çalışmayı sürdürüyordu.</p>
+
+                    <p>1994'te kendilerine OOSE(Object Oriented Software Engineering) isimli çalışmasıyla katılan Ivar
+                        Jacobson ile birlikte, bu üçlü çalışmalarını birleştirerek daha sonralar adı UML ismiyle
+                        anılacak tek bir dil haline getirdi.</p>
+
+                    <p>UML ismindeki Unified(Birleştirilmiş) ifadesi bu nedene dayanmaktadır.</p>
+
+                    <p>UML; birleştirilmiş modelleme dili özellikle büyük çaplı kurumsal bir uygulama geliştirileceği
+                        zaman kullanılması gerekir ve nesne yönelimli programlama ile geliştirilecek olan projeyi
+                        modellemenin standartlaşmış notasyonunu teşkil eder.</p>
+
+                    <p>Profesyonel anlamda uygulama geliştirmenin ilk şartı; kodlamaya başlamadan önce kapsamlı bir
+                        analiz ve mantıksal tasarım çalışması yapmaktır.</p>
+
+                    <p>Proje geliştirme süreçlerinin başlangıçta öngörülen zamanın ötesine geçmesi, proje maliyetlerini
+                        de olumsuz etkiler.</p>
+
+                    <p>İyi tasarlanmış ve dökümante edilmiş projelerin test ve bakım işlemleri de daha kolay olur.</p>
+
+                    <p>Tasarlanacak sisteme farklı açılardan yaklaşıp, bunun sonucunda yapılan modellemeyi dökümante
+                        edebilecek farklı UML diyagramları vardır.</p>
+
+                    <h4 style="color: blue;">UML DİYAGRAMLARI</h4>
+
+                    <p>UML diyagramları 3 grupta sınıflandırılır.</p>
+
+                    <h5><b style="color: red;">1. </b>YAPISAL MODELLEME DİYAGRAMLARI</h5>
+                    <ul>
+                        <li>Class</li>
+                        <li>Object</li>
+                        <li>Deployment</li>
+                        <li>Composite Structure</li>
+                        <li>Component</li>
+                    </ul>
+
+                    <h5><b style="color: red;">2. </b>DAVRANIŞSAL MODELLEME DİYAGRAMLARI</h5>
+                    <ul>
+                        <li>Sequence</li>
+                        <li>Communication</li>
+                        <li>State</li>
+                        <li>Activity</li>
+                        <li>Timing</li>
+                    </ul>
+
+                    <h5><b style="color: red;">3. </b>İŞLEVSEL MODELLEME DİYAGRAMLARI</h5>
+                    <ul>
+                        <li>Use Case</li>
+                    </ul>
+
+                    <h4 style="color: blue;">Sınıf Diyagramları</h4>
+                    <ul>
+                        <li>Bu diyagramlar genellikle iş katmanını modellemek için kullanılır.</li>
+                        <li>Sistemin statik yapısını ortaya koymak amacıyla tasarlanırlar.</li>
+                        <li>Sınıflar ve aralarındaki ilişkiler standardize edilmiş semboller ile çizilir.</li>
+                        <li>Sınıflar yatay çizgilerle üçe ayrılmış dikdörtgen sembolüyle temsil edilir.</li>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri4.png" alt="tasarımdesenleri4"
+                            style="max-width: 100%; height: auto;">
+                        <p></p>
+                        <li>Gerektiğinde sınıfın hangi namespace içinde yer aldığı da belirtilebilir.</li>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri5.png" alt="tasarımdesenleri5"
+                            style="max-width: 100%; height: auto;">
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri6.png" alt="tasarımdesenleri6"
+                            style="max-width: 100%; height: auto;">
+                        <p></p>
+                        <li>Sanal(abstract) metotların isimleri italik yazılır.</li>
+                        <li>Statik üyeler altı çizili yazılarak vurgulanabilir.</li>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri7.png" alt="tasarımdesenleri7"
+                            style="max-width: 100%; height: auto;">
+                        <p></p>
+                    </ul>
+
+                    <h4 style="color: blue;">Nesneler Arasındaki İlişkiler</h4>
+                    <p>UML'de sınıflar ve/veya nesneler arasındaki ilişkilerin listesi aşağıda verilmiştir.</p>
+                    <img src="assets/TasarımDesenleri1/tasarımdesenleri8.png" alt="tasarımdesenleri8"
+                        style="max-width: 100%; height: auto;">
+                    <p></p>
+
+
+                    <h5 style="color: blue;"><b style="color: red;">1. </b>Association (Referans veya Birliktelik)
+                        İlişkisi</h5>
+                    <ul>
+                        <li>Bir sınıfın başka bir sınıf türünden nesne referansı taşımasına denir.</li>
+                        <li>Association ilişkisi iki nesne arasına çizilen düz bir çizgi ile gösterilir.</li>
+                        <li>Çoğunlukla bu çizginin üzerine ilişkiye verilen isim yazılır.</li>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri9.png" alt="tasarımdesenleri9"
+                            style="max-width: 100%; height: auto;">
+                        <p></p>
+                    </ul>
+
+                    <blockquote class="blockquote" style="color: red;">
+                        <b>Multiplicity</b>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri10.png" alt="tasarımdesenleri10"
+                            style="max-width: 100%; height: auto;">
+                        <p></p>
+                        <p style="color: blue;">Multiplicity gösterimi açıkça yapılmamış bir diyagramda söz konusu
+                            nesneler arasında bire-bir ilişki olduğu kabul edilir.</p>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri11.png" alt="tasarımdesenleri11"
+                            style="max-width: 100%; height: auto;">
+                    </blockquote>
+
+                    <blockquote class="blockquote" style="color: black;">
+                        <b style="color: red;">Navigability</b>
+                        <ul>
+                            <li>Sadece bir nesne diğeri türünde referans tutuyorsa buna tek yönlü(unidirectional)
+                                association denir.</li>
+                            <li>Bu durum, yönü referansı tutulan nesneye doğru bir ok ile gösterilir.</li>
+                            <li>Örneğin siparişin hangi müsteriye ait olduğunu ifade etmek amacıyla Sipariş sınıfında
+                                Müsteri türünde bir referans tutuluyor ise;</li>
+                            <p></p>
+                            <img src="assets/TasarımDesenleri1/tasarımdesenleri12.png" alt="tasarımdesenleri12"
+                                style="max-width: 100%; height: auto;">
+                            <p></p>
+                            <li>Öte yandan ok ile yön belirtilmezse bu durum ya hangi nesnenin hangi nesneyi referanse
+                                ettiğini bilmiyor olduğumuz anlamına gelir ya da her ikisinin de birbirini referanse
+                                ettiği(bidirectional assocation) anlamına gelir.</li>
+                        </ul>
+                    </blockquote>
+
+                    <h5 style="color: blue;"><b style="color: red;">2. </b>Aggregation (Barındırma, içerme) İlişkisi
+                    </h5>
+                    <ul>
+                        <li>Aggregation, assocation'ın özel bir halidir.</li>
+                        <li>Nesneler arasındaki parça-bütün ilişkisini modeller.</li>
+                        <li>Aggregation ve Association arasında kodlama anlamında eliğin bir fark yoktur.</li>
+                        <li>Her aggregation aynı zamanda bir assocation ilişkisidir.</li>
+                        <li>Kodlama bakımından değil kavramsal olarak birbirlerinden farklıdırlar.</li>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri13.png" alt="tasarımdesenleri13"
+                            style="max-width: 100%; height: auto;">
+                        <p></p>
+                    </ul>
+
+                    <blockquote class="blockquote" style="color: black;">
+                        <b style="color: red;">Composition(Bağımlı İyelik) İlişkisi</b>
+                        <li>Bu ilişkide parça ve bütün birbirinden bağımsız şekilde bulunamaz.</li>
+                        <li>Ayrıca bir parça aynı anda birden fazla bütüne ait de olamaz.</li>
+                        <li>UML'de bu ilişki içi dolu baklava şekli ile gösterilir.</li>
+                    </blockquote>
+                    <li>İki nesne arasındaki composition ilişkisi olup olmadığını anlamak için şu 3 soruya cevap bulmak
+                        gerekir:</li>
+
+
+                    <ol>
+                        <li>Bütün nesnenin ömrü sonlandığında parçanın ömrü de sonlanıyor mu?</li>
+                        <li>Parça bir yere taşındığında bütün de onunla birlikte taşınıyor mu?</li>
+                        <li>Parça kolaylıkla başka bir bütüne ait hale getirilebiliyor mu?</li>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri14.png" alt="tasarımdesenleri14"
+                            style="max-width: 100; height: auto">
+                    </ol>
+
+                    <blockquote class="blockquote" style="color: black;">
+                        <b style="color: red;">Inheritance(Kalıtım) İlişkisi</b>
+                        <p>UML'de taban ve türeyen sınıflar arasındaki kalıtım ilişkisi bazı kaynaklarda
+                            generalization(genelleme) olarak da adlandırılır.</p>
+                        <p>Kalıtım ilişkisi yönü türeyen sınıftan taban sınıfa oğru olan içi boş bir ok sembolü ile
+                            gösterilir.</p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri15.png" alt="tasarımdesenleri15"
+                            style="max-width: 100%; height: auto;">
+                    </blockquote>
+
+                    <blockquote class="blockquote" style="color: black;">
+                        <b style="color: red;">Relization(Gerçekleme) İlişkisi</b>
+                        <p>UML'de sınıftan interface'e doğru çizilen bu ilişki özellikle C# ve Java dillerinde
+                            polimorfik tasarımlar için sıklıkla kullanılır. Ancak gösterimde kalıtımdan farklı olarak
+                            kesikli çizgi kullanılır.</p>
+                        <p>Bazı kaynaklarda bu ilişki lolipop sembolü ile de gösterilir.</p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri16.png" alt="tasarımdesenleri16"
+                            style="max-width: 100%; height: auto;">
+                    </blockquote>
+
+                    <blockquote class="blockquote" style="color: black;">
+                        <b style="color: red;">Dependency(Bağımlılık) İlişkisi</b>
+                        <li>Terminolojide başka bir nesneye bağımlı olan nesneler, hedef; bağımlı olunan nesneler ise
+                            kaynak olarak adlandırılır.</li>
+                        <li>Dependency ilişkisinin dayadığı temel fikir, kaynak nesne üzerinde yapılan herhangi bir
+                            değişimin hedef durumundaki nesneye de yansımasıdır.</li>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri17.png" alt="tasarımdesenleri17"
+                            style="max-width: 100%; height: auto;">
+                    </blockquote>
+
+                    <blockquote class="blockquote" style="color: black;">
+                        <b style="color: red;">Use(Kullanma) İlişkisi</b>
+                        <li>Use sürekli bir ilişki değildir daha çok bir anlık kullanıp bırakma biçimindedir.</li>
+                        <li>Örneğin yoldan geçen bir taksiye bindiğinizde onu sadece bir süreliğine kendi
+                            amacınız için kullanırsınız ama taksi size ait olmaz.</li>
+                        <li>Use ilişkisinde nesneler arasında çalışma zamanında geçici bir ilişki oluşur. Bir
+                            referans tutmak biçiminde olmayan bu ilişki genelde üç şekilde kurulur.</li>
+                        <ol>
+                            <li>Statik olarak</li>
+                            <li>Bir nesneye ait bir metodun, use ilişkisinde olduğu nesnenin metodunu parametre olarak alması</li>
+                            <li>Lokal veya global kullanım</li>
+                        </ol>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri18.png" alt="tasarımdesenleri18" style="max-width: 100%; height: auto;">
+                        <p></p>
+                        <li>Dependency ve Use birbirine oldukça yakındır. Use ilişkisinin olduğu nesneler
+                            arasında kendiliğinden bir bağımlılık ortaya çıkabilir.</li>
+                    </blockquote>
+
+                    <h3 style="color: #40407a;">NESNE OLUŞTURULMASINA/YARATILMASINA İLİŞKİN (Creational) PATTERNLER</h3>
+
+                    <p>Bu patternlerin genel ve ortak karakteristiği; çeşitli biçimlerdeki nesne yaratılış işlemlerini nesneyi kullanacak olan kişiden gizlemeleri ve soyutlamalarıdır.</p>
+
+                    <p>Bu noktada; "nesne yaratma" ifadesi, İngilizce terminolojideki "create" kelimesinden yola çıkılarak kullanılmaktadır.</p>
+
+                    <p>Mevcut nesnelerin birleşiminden oluşan kompozit nesneler için ise "oluşturma" kelimesi kullanılacaktır.</p>
+
+                    <h5 style="color: #40407a;"><b style="color: red;">1. </b>Singleton Tasarım Deseni</h5>
+
+                    <p>Singleton deseni bir programın yaşam süresince belirli bir nesneden sadece bir örneğinin(instance) olmasını garantiler.</p>
+
+                    <blockquote class="blockquote" style="color: black;">
+                    <p>Örneğin;</p>
+                    <ul>
+                        <li>Windows'taki taskbar, dock menu tüm pencereler için aynıdır.</li>
+                        <li>ASP.NET'deki Application nesnesi,</li>
+                        <li>Java'da bir servlet nesnesi,</li>
+                        <li>Android kütüphanesindeki servis nesneleri.</li>
+                    </ul>
+                    </blockquote>
+
+                    <h5>Singleton Nasıl Çalışır ?</h5>
+                    <ol>
+                        <li>Bu paternin uygulanacağı sınıfın private bölümünde sınıfın kendisi türünden bir adres saklayan static bir değişken tanımlanmalıdır.</li>
+                        <li>Söz konusu sınıf türünden nesnenin yaratılışı sadece bir kez yapılmak istendiği için kurucu metot private veya protected tanımlanmalıdır.</li>
+                        <li>Kurucu metodun bir anlamda yerini alacak static bir üye metot tanımlanmalıdır. Bu metot 1.maddede belirtilen static değişkeni geri döndürecek şekilde yazılmalıdır.</li>
+                    </ol>
+
+                    <blockquote class="blockquote" style="color: black;">
+                        <p style="color: red;">Örnek-1;</p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri19.png" alt="tasarımdesenleri19" style="max-width: 100%; height: auto;">
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri20.png" alt="tasarımdesenleri20" style="max-width: 100%; height: auto;"><!--fotolar düzenlenecek-->
+                        <p></p>
+                        <p>Verilen örnek tek kanallı uygulamalarda sorunsuz çalışmasına rağmen aksi durumda söz konusu nesnenin her zaman tek örneğinin yaratılacağını garanti edemez. Bunu engellemek için thread senkronizasyon mekanizmalarından yararlanılmalıdır.(Mutex,Monitor, vb.)</p>
+                        <p></p>
+                        <img src="assets/TasarımDesenleri1/tasarımdesenleri21.png" alt="tasarımdesenleri21" style="max-width: 100%; height: auto;">
+                    </blockquote>
+
+                    <h5 style="color: #40407a;"><b style="color: red;">2. </b>Factory Method Tasarım Deseni</h5>
+
+                    <p>Factory method tasarım deseninin ana amacı "genişletilebilirlik" tir.</p>
+                    <p>Birbirinden yapısal olarak farklı ancak aynı zamanda birçok karakteristik özelliği ortak olan nesnelerin yönetimi, oluşturma kıstaslarının belirlenmesi ve yaratılması için Factory metodu kullanılır.</p>
+                    <p>Bu desen sistemimizde belli özelliklere sahip soyut sınıflar oluşturmak istediğimizde kullanılır.</p>
+
+                    <h5>Factory Method Ne Zaman Kullanılır ?</h5>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Footer-->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/smetsyn/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+
+
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://github.com/rRayiha">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        </li>
+
+
+
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.linkedin.com/in/ismet-say%C4%B1n-19b248233/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic"><span style="color: black;">Created by</span>
+                        <span><a style="color: blue;" href="https://www.instagram.com/smetsyn/">Rayiha</a></span> &copy;
+                        <span style="color: black;">RayihaDEV 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

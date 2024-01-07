@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Stack(Yığın)</title>
+    <link rel="icon" type="image/png" sizes="120x120" href="assets/turkey.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a style="color: white;" class="navbar-brand" href="index.html"><i>Rayiha</i><span
+                    style="color: yellow;">DEV</span></a>
+            <button style="color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="hakkımızda.html">Hakkımızda</a></li>
+                    <!-- <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Örnek</a></li>-->
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('assets/veriyapilari3/stackarkaplan.png')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1 style="color: #f1c40f;">Stack (Yığın)</h1>
+                        <p></p>
+                        <span style="color: #7efff5;" class="meta">
+                            <a target="_blank" style="color: yellow;"
+                                href="https://www.instagram.com/smetsyn/">Rayiha</a>
+                            tarafından 25 Aralık'ta yayınlandı, 2023
+                        </span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content-->
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vTI7CuYCtds?si=Bu8iyU_SVhnU1Bhv"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qMG5LvPoTis?si=piw-n8NF10u00xq1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                    <blockquote style="color: blue;" class="blockquote">
+                        <p></p>
+                        <h3>Stack (Yığın)</h3>
+                        </p>
+                    </blockquote>
+
+                    <p>Tek taraflı giriş ve çıkışlarıa açık olan. İlk giren son çıkar LIFO(Last in First Out) mantığı ile çalışan bir <b><a target="_blank" style="color: red;" href="veriyapilari2soyutveritürleri.html">ADT</a></b> örneğidir.</p>
+
+                    <p>Temelde iki veya üç fonksiyonu bulunur, bunlar :</p>
+
+                    <blockquote class="blockquote">
+                        <p><b style="color: blue;">Push -> </b>Stack içerisinde bir bilgi koymaya (Stack'in en tepesine koyar)</p>
+
+                        <p><b style="color: blue;">Pop -> </b>Stack içerisinden bir bilgi almaya (Stack'in en tepesinden alır)</p>
+
+                        <p><b style="color: blue;">Top -> </b>Stack'in en tepesindeki bilgiyi alır ancak Stack'ten çıkartmaz sadece okur.</p>
+                    </blockquote>
+
+                    <img src="assets/veriyapilari3/stack1.webp" alt="stack1" style="max-width: 100%; height: auto;">
+
+                    <p></p>
+                    <p>Bu fonksiyonlar sayesinde bir stack kullanılabilir hale gelmiş olur.</p>
+
+                    <p>Temel olarak stack, bir array veya linked list üzerinde inşa edilebilirler. Örnek olarak bir dizi üzerine inşa edilen stack için bir değişken, dizide o anda kaç değer olduğunu tutacak ve her pop işleminden sonra bu değer azalatılırken, her push işleminden sonra arttırılacaktır.</p>
+
+                    <p>Benzer uygulama linked list üzerinde yapılırsa, pop işlemiyle sondan bir düğüm silinecek veya push işlemi ile sona bir düğüm eklenecektir.</p>
+
+                    <blockquote style="color: blue;">Aşağıda basit bir bağlı liste üzerinde stack kullanılan kod örneği verilmiştir : </blockquote>
+
+                    <ul>
+                        <li><a target="_blank" style="color: red;" href="stack1.cpp">Bağlı liste(linked list) ile yığın(stack) örnek kodu (C dilinde)</a></li>
+
+                        <li><a target="_blank" style="color: red;" href="stack2.cpp">Bağlı liste(linked list) ile yığın(stack) örnek kodu (C++ dilinde)</a> Bu kod, bağlı listeden yığın çıkarma, ekleme ve teki öğeyi alma işlemlerini uygular. Kodda push, pop, peek ve isEmpty yöntemleri uygulanmıştır. İlk üç yöntem Stack sınıfının üyeleridir, isEmpty yöntemi ise Stack sınıfının önemi yaratmadığını belirtmek için uygulanmıştır. Yığın işlemleri, bağlı listenin en başına (top) veri ekleme ve kaldırma işlemleri ile uygulanmaktadır. Bağlı listenin her düğümü data ve next alanlarını içerir. data alanı yığında tutulacak veriyi içerir, next ise bağlı listenin bir sonraki düğümüne işaret eder.</li>
+                    </ul>
+
+                    <blockquote class="blockquote">
+
+                        <p style="color: blue;">Bağlı liste üzerinden yığın kodlamasının açıklaması.</p>
+
+                        <p>Yukarıdaki bağlı liste kodunu anlamaya öncelikle kullandığımı veri yapısını oluşturan bir düğümü anlayarak başlayalım. Düğüm yapısı için kullanılan kodu ele alırsak : </p>
+
+                        <img src="assets/veriyapilari3/stack2.webp" alt="stack2" style="max-width: 100%; height: auto;">
+
+                        <p>Yukarıdaki bu kodda bulunan lnode isimli yapı(struct) iki üyeye sahiptir. Buradaki data isimli int değişkeni, düğüm içindeki verileri tutmak için kullanılmakta ve yine kendi tipinden (lnode) bir gösterici(pointer) ile next isimli bir değişken tanımlanmaktadır. Bu ikinci gösterici değişkenin amacı, kendi tipinden düğümleri göstermek ve bu sayede bağlı listeyi inşa etmektir.
+                        </p>
+
+                        <img src="assets/veriyapilari3/stack3.webp" alt="stack3" style="max-width: 100%; height: auto;">
+
+                        <p>Kodun 8. satırında ise global bir düğüm değişkeni olan iter tanımlanmış ve NULL olarak içeriği atanmıştır. Bu değişken bağlı listenin ilk elemanını tutmak için kodun geri kalan kısmında kullanılacaktır.</p>
+
+                        <img src="assets/veriyapilari3/stack4.webp" alt="stack4" style="max-width: 100%; height: auto;">
+
+                        <p>Veri yapımızı tanıdıktan sonra, bağlı liste üzerindeki yığın(stack) fonksiyonlarını anlamaya çalışalım. Bu kodda kullanılan 3 fonksiyon şunlardır:</p>
+
+                        <ul>
+                            <li><b style="color: blue;">void push(int) -> </b>bu fonksiyon, yığına veri eklemek için kullanılır.</li>
+                            <li><b style="color: blue;">int pop() -> </b>bu fonksiyon, yığından veri almak için kullanılır.</li>
+                            <li><b style="color: blue;">void printStack() -> </b>bu fonksiyon ise yığının içeriğini ekrana basmak için kullanılır.</li>
+                        </ul>
+
+                        <p>Bu fonksiyonların çalışmalarını anlamaya push fonksiyonu ile başlayalım.</p>
+
+                        <img src="assets/veriyapilari3/stack5.webp" alt="stack5" style="max-width: 100%; height: auto;">
+
+                        <p>Yukarıdaki kodun 11. satırında bulunan if kontrolü ile, iter göstericisinin ilk değeri kontrol edilmiştir. Buradaki amaç, bağlı listenin ve dolayısıyla yığının içinin boş olup olmadığını anlamaktır. Şayet yığın boşsa (ve dolayısıyla iter'in değeri NULL ise) o zaman hafızada(ram) yeni bir düğüm tanımlamış ve iter değişkeni bu düğümü gösterecek şekilde atanmıştır (kodun 13. satırı). Ayrıca bu yeni düğümün gösterdiği bağlantı NULL olarak atanmıştır. Bu sayede veri yapımızın son göstericisini NULL olarak ayarlanmış olunur.</p>
+
+                        <p>Kodun 17. satırında push fonksiyonuna parametre veren ve yığına eklenmek istenen data değişkeni, yeni oluşturduğumuz bu düğümün içeerisine veri olarak kaydedilmiş ve ardından yeni bir düğüm oluşturularak bağlı listenin başına eklenmiştir.</p>
+
+                        <p>Bu fonksiyonun çalışmasını aşağıdaki gibi hayal etmemiz mümkündür : </p>
+
+                        <img src="assets/veriyapilari3/stack6.webp" alt="stack6" style="max-width: 100%; height: auto;">
+                        <p></p>
+                        <img src="assets/veriyapilari3/stack7.webp" alt="stack6" style="max-width: 100%; height: auto;">
+                        <p></p>
+                        <p>Yukarıdaki temsili resimlerde gösterilen 4. durum için, kodun 18. sattırında yeni bir düğüm göstericisi tanımlanmış ve bu düğüm göstericisi, bağlı listenin ilk elemanını, kendi next göstericisi ile kodun 19. satırında göstermiştir. Bu sayede bağlı listenin başına yeni bir düğüm eklenmiş ve daha sonraki ekleme işlemleri için bu düğüm boş olarak tutulmuştur. Zaten kodun 11. satırında bağlı listenin boş olup olmadığının kontrol edilmesi ve şayet boş ise yeni bir düğüm eklenmesinin sebebi de budur.</p>
+
+                        <p>Push fonksiyonu yukarıdaki şekilde, bağlı listeye yeni veri geldikçe ekleme işlemi yapar ve liste içerisine veri eklenerek temsili olarak sola doğru büyür. Listenin son elemanı her zaman için NULL değerindedir ve listeye yeni eklenen değerler soldan eklenir.</p>
+
+                        <p>Kodun 44. satırına kadar olan main fonksiyonu içerisinde bulunan push fonksiyonları çalıştırıldığında bağlı listenin hali aşağıdaki şekli alır.</p>
+
+                        <img src="assets/veriyapilari3/stack8.webp" alt="stack8" style="max-width: 100%; height: auto;">
+
+                        <p>Push fonksiyonunun çalışmasına baktıktan sonra sıradaki fonksiyonumuz olan pop fonksiyonunu inceleyelim</p>
+
+                        <img src="assets/veriyapilari3/stack9.webp" alt="stack9" style="max-width: 100%; height: auto;">
+
+                        <p>pop fonksiyonu, iter ile gösterilmekte olan düğümden(node) bir sonraki düğümün verisini döndürmekte ve iter göstericisini sağa doğru ilerletmektedir.</p>
+
+                        <img src="assets/veriyapilari3/stack10.webp" alt="stack10" style="max-width: 100%; height: auto;">
+
+                        <p>Kodun 28. satırındaki free fonksiyonunun amacı, bu ilk başta tutulan düğümün hafızada(ram) kaldırılması ve gereksiz yere yer kaplamasıdır.</p>
+
+                        <p>Son olarak yığının(stack) içeriğini ekrana basan fonksiyonumuz olan printStack fonksiyonunu incelersek : </p>
+
+                        <img src="assets/veriyapilari3/stack11.webp" alt="stack11" style="max-width: 100%; height: auto;">
+
+                        <p>Bu kodda, temp isminde geçici bir gösterici, iter'in gösterdiği ilk elemandan başlayarak bağlı listenin sonuna kadar olan bütün elemanları sırasıyla ekrana basmaktır.</p>
+
+                        <img src="assets/veriyapilari3/stack12.webp" alt="stack12" style="max-width: 100%; height: auto;">
+                    </blockquote>
+
+        
+                    <blockquote class="blockquote" style="color: red;">
+                        Kaynakça :
+                        <a target="_blank" style="color: blue;"
+                            href="https://bilgisayarkavramlari.com/2007/05/04/stack-yigin/">Bilgisayar
+                            Kavramları</a>
+                    </blockquote>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Footer-->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/smetsyn/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+
+
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://github.com/rRayiha">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        </li>
+
+
+
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.linkedin.com/in/ismet-say%C4%B1n-19b248233/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic"><span style="color: black;">Created by</span>
+                        <span><a style="color: blue;" href="https://www.instagram.com/smetsyn/">Rayiha</a></span> &copy;
+                        <span style="color: black;">RayihaDEV 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

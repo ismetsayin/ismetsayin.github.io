@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Pointer Ve Diziler</title>
+    <link rel="icon" type="image/png" sizes="120x120" href="assets/turkey.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a style="color: white;" class="navbar-brand" href="index.html"><i>Rayiha</i><span
+                    style="color: yellow;">DEV</span></a>
+            <button style="color: #fbc531;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="hakkımızda.html">Hakkımızda</a></li>
+                    <!-- <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Örnek</a></li>-->
+                    <li class="nav-item"><a style="color: white;" class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('assets/veriyapilari4/pointerarkaplan2.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1 style="color: #7efff5;">Pointer(Gösterici) Ve Diziler(Arrays)</h1>
+                        <p></p>
+                        <span style="color: #7efff5;" class="meta">
+                            <a target="_blank" style="color: yellow;"
+                                href="https://www.instagram.com/smetsyn/">Rayiha</a>
+                            tarafından 20 Aralık'ta yayınlandı, 2023
+                        </span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content-->
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DXRHoPqjGVY?si=FZo9TCx8yJd_0q7M"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                    <blockquote style="color: blue;" class="blockquote">
+                        <p></p>
+                        <h3>Pointerlar Ve Kullanımları</h3>
+                    </blockquote>
+
+                    <p>Pointer(gösterici) basitçe bir değişkenin bir hafıza alanını göstermesi demektir. C dilinde
+                        pointerlar :</p>
+
+                    <p>Veritipi *pointeradi;</p>
+
+                    <p>Şeklinde tanımlanır. Burada veritipi int, char, float gibi değişken tipleridir. Pointer adı ise
+                        bir değişken adının taşıması gereken özellikleri taşıyan ve tanımlandığı scope(geçerlilik
+                        alanında) yaşayacak olan değişken adıdır.</p>
+
+                    <p>Bir değişkenin başına & işareti geldiğinde ise bu değişkenin adresini temsil eder. Yani değişken
+                        hafızada nereye konulduysa bu konulan yerin adresine bu işaret ile ulaşılabilir.</p>
+
+                    <blockquote>
+                        <p style="color: blue;">Örneğin,</p>
+                        <pre style="color: red;">
+                            int *p;
+                            int a = ;
+                            p = &a;
+                        </pre>
+                    </blockquote>
+
+                    <p>satırından sonra hafızada integer değer gösteren p isminde bir pointer tanımlanmış olur. Bunu
+                        hafızada temsili olarak gösterecek olursak :</p>
+
+                    <img src="assets/veriyapilari4/pointer1.webp" alt="pointer1" style="max-width: 100%; height: auto;">
+
+                    <p>Yukarıdaki temsili resimde, ilk sütun adres değerlerini temsil etmektedir, buna göre hafızanın
+                        a101 ie a120 numaralı adresleri arasındaki bilgiler gösterilmiştir (bu değerler hexadecimal olup
+                        temsili olarak yazılmıştır).</p>
+
+                    <p>Kodda bulunan p ve a değerlerinin hafızada hangi bölüme atanacağı çalıştırma sırasında(execution
+                        time) belirlenir dolayısıyla tam olarak nerede bulunacağı bilinemez ancak p tanımlandıktan sonra
+                        a107 adresine ve a tanımlandıktan sonra a116 adresinin ayrıldığını kabul edelim. Bu durumda
+                        p'nin değeri a107 numaralı adreste yazacaktır.</p>
+
+                    <p>Kodda a değerine 10 konulmuştur bu durumda a'nın değerinin durduğu a116 numaralı adreste sayısal
+                        olarak 10 yazacaktır.</p>
+
+                    <p>Kodda a'nın taşıdığı adres değeri, p'nin içine atılmıştır. Bu durumda p'nin değeri a'nın adresi
+                        olacaktır.</p>
+
+                    <blockquote>
+                        <p style="color: blue;">Aşağıdaki örnek kodu çalıştırınız ve yorumlayınız:</p>
+                        <pre style="color: red;">
+                    #include
+
+                    int main()
+                    {
+                    int a = 10;
+                    int *p;
+                    p = &a;
+                                    
+                    printf("%dn", *p); //p'nin gösterdiği yeri basar
+                    printf("%dn", p); //p'nin değerini yani,
+                                //p'nin gösterdiği yerin adresini basar.
+
+                    printf("%dn", a); //a'nın değerini basar.
+                    printf("%dn", &a); //a'nın adresini basar.
+
+                    printf("%dn", &p); //p'nin adresini basar.
+                    }
+                    </pre>
+                    </blockquote>
+
+                    <p>C dilinde her dizi bir pointer her pointer da doğal bir dizidir.</p>
+                    <pre style="color: red;">
+                            char str[]80, *p1;
+                            p1 = str1;
+                        </pre>
+
+                    <p>Burada p1, str dizisinin -stringinin- ilk elemanının adresinin değerini alır. Yani string
+                        adı, aslında o stringin hafızadaki başlangıç adresini = stringin ilk karakterinin adresini
+                        tutmaktadır. str dizisinin 5. elemanına erişmek için ise:</p>
+
+                    <pre style="color: red;">
+                            str[4] veya *(p+1)
+                        </pre>
+
+                    <p>ifadelerini kullanırız. Her ikisinin de anlamı aynıdır.</p>
+
+                    <p>C'de dizi elemanlarına 2 şekilde ulaşılır. pointer kullanımı ile indis kullanımı ile. indis
+                        kullanımı geliştirme ve anlama bakımından bir kolaylık sağlasa da, hız önemli bir konu
+                        olduğundan C programcıları genelde dizi erşimini pointer kullanarak yaparlar. Aşağıda aynı işi
+                        yapan iki fonksiyon yer almaktadır.</p>
+
+                    <pre style="color: red;">
+                            void putstr(char*s)
+                            {
+                                int t;
+                                for(t=0;s[t];++t)putchar(s[t]);
+                            }
+                            void putstr(char*s)
+                            {
+                                while(*s)putchar(*s++);
+                            }
+                        </pre>
+
+                    <p>C dilinde bir pointer'i araray gibi kullanmak için:</p>
+                    <pre style="color: red;">
+                            int *p = (int *)malloc(sizeof(int)*10);
+                        </pre>
+
+                    <p>Şeklinde bir satır yazmak yeterlidir. Burada klasik dizi tanımından farksız bir işlem yapılmış,
+                        hafızada 10'luk bir alan açılmış ve tipi integer olarak tanımlanmıştır.</p>
+
+                    <p>Pointer'ın farkı bu alana erişim şeklindedir. Yani dizi tanımlarında olduğu gibi köşeli
+                        parantezle (a[3]gibi) erişmek yerine pointer üzerinde işlem yapmak gerekli ancak yöntem bir
+                        önceki örnekte olduğu gibi</p>
+
+                    <pre style="color: red;">
+                            printf("%dn", (p+4)); 
+                        </pre>
+
+                    <p>şeklinde işleyebilmektedir.</p>
+
+                    <blockquote class="blockquote" style="color: red;">
+                        Kaynakça :
+                        <a target="_blank" style="color: blue;"
+                            href="https://bilgisayarkavramlari.com/2007/05/04/abstract-data-type-adt-soyut-veri-tipleri/">Bilgisayar
+                            Kavramları</a>
+                    </blockquote>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Footer-->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/smetsyn/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+
+
+
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://github.com/rRayiha">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        </li>
+
+
+
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.linkedin.com/in/ismet-say%C4%B1n-19b248233/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic"><span style="color: black;">Created by</span>
+                        <span><a style="color: blue;" href="https://www.instagram.com/smetsyn/">Rayiha</a></span> &copy;
+                        <span style="color: black;">RayihaDEV 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
